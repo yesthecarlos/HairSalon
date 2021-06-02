@@ -15,7 +15,8 @@
 ## Description
 
 _This project uses C#, .NET 5, EF Core 5, MySQL and the MVC pattern to create an overr a a hypothetical factory's machines.  The app welcomes the user and allows them view and add stylists and clients and allows the user to assign clients to stylists. A database schema file is included in the root directory of the project. A diagram of the schema is included below._
-![carlos_mendez_db_schema]https://github.com/yesthecarlos/HairSalon/blob/main/schema.png?raw=true
+  
+  <img src="https://github.com/yesthecarlos/HairSalon/blob/main/schema.png?raw=true" alt="carlos_mendez_schema" width="600"/>
 
 ## Setup and Use
 
