@@ -2,13 +2,28 @@
   Layout = "_Layout";
 }
 
+@using EauClaire.Models;
 @model EauClaire.Models.Stylist
+
 
 <h2>Stylist Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)</h3>
-<h4>@Html.DisplayNameFor(model => model.Clients): <ul>@foreach (Client client in Model) {
-  <li>@Html.DisplayFor(model => model.Clients)</li>}</ul></h4>
+<h3>Stylist's Name: @Html.DisplayFor(m => m.StylistName)</h3>
+<h4>Clients: 
+  <ul>
+  @foreach (Client client in Model.Clients) 
+  {
+    <li>@Html.ActionLink($"{client.ClientName}", "Details", "Clients", new { id = client.ClientId })</li>
+  }
+  </ul>
+</h4>
 <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Back to list", "Index")</p>
+
+
+
+@* @foreach (Client client in Model)
+{
+  <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | @client.Stylist.StylistName</li>
+} *@

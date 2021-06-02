@@ -6,7 +6,7 @@
 
 <h2>Edit</h2>
 
-<h4>Edit this task: @Html.DisplayFor(model => model.ClientName)</h4>
+<h4>Edit this client: @Html.DisplayFor(model => model.ClientName)</h4>
 
 @using (Html.BeginForm())
 {
@@ -15,10 +15,10 @@
     @Html.LabelFor(model => model.ClientName)
     @Html.EditorFor(model => model.ClientName)
 
-    @Html.LabelFor(model => model.Stylist)
-    @Html.DropDownList("StylistName")
+    @Html.LabelFor(model => model.StylistId)
+    @Html.DropDownList("StylistId")
 
-    <input type="submit" value="Save" />
+    <input type="submit" value="Save" class="btn btn-default" />
 }
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
