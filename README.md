@@ -38,7 +38,7 @@ _This project uses C#, .NET 5, EF Core 5, MySQL and the MVC pattern to create an
   }
 }
 ```
-4. To run the web app:
+5. To run the web app:
     * Navigate to `HairSalon/` in your command line
     * Run the command `dotnet restore` to restore the dependencies that are listed in the .csproj
     * Run the commmand `dotnet build` to build the project and its dependencies into a set of binaries
