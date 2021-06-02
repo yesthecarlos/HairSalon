@@ -23,6 +23,7 @@ _This project uses C#, .NET 5, EF Core 5, MySQL and the MVC pattern to create an
 ### Prerequisites
 * [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 * A text editor like [VS Code](https://code.visualstudio.com/)
+* [MySQL Workbench](https://www.mysql.com/products/workbench/)
 * A web browser to run and interact with the web app.
 
 ### Installation
@@ -42,12 +43,12 @@ _This project uses C#, .NET 5, EF Core 5, MySQL and the MVC pattern to create an
     * Navigate to `HairSalon/` in your command line
     * Run the command `dotnet restore` to restore the dependencies that are listed in the .csproj
     * Run the commmand `dotnet build` to build the project and its dependencies into a set of binaries
-    * Create a datbase using SQL via MySQL:
-      -In the Navigator > Administration window, select Data Import.Restore
-      -In _Import Options_ select _Import from Self-Contained File._
-      -Navigate to _carlos\_mendez.sql_ in the main directory
-      -Under _Default Scheme to be Imported To_, select the _New_ button
-      -Enter the name of the database _(carlos\_mendez.sql)_ and click OK
+    * Create a datbase using SQL via MySQL Workbench:\
+      -In the Navigator > Administration window, select Data Import/Restore\
+      -In _Import Options_ select _Import from Self-Contained File._\
+      -Navigate to _carlos\_mendez.sql_ in the project's main directory\
+      -Under _Default Schema to be Imported To_, select the _New_ button\
+      -Enter the name of the database _(carlos\_mendez.sql)_ and click OK\
       -Click _Start Import_
     * Run the command `dotnet run` to run the project
     * Finally, open the project in your web browser, using the specified address (default is localhost:5000)
